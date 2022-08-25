@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background: var(--main-Bg-Color);
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+  width: 99vw;
+  Height: 95vh;
+}
+#nav {
+  position: fixed;
+  top: 5px;
+  padding: 0;
+  display:flow-root;
+  width: 99vw;
+  background: var(--main-Bg-Color);
+  color: var(--text-Color);
+  border-radius: 5px;
+  box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+body {
+  position:fixed;
+  top: 60px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: 'Geneva, Verdana, sans-serif';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.1s ease-in;
+  color: var(--text-Color);
+  background-color: var(--app-Bg-Color);
+}
+
+#nav .LeftTitle {
+    float: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.icon {
+  float: right;
+  padding: 0.5rem;
+}
+
+#nav a.router-link-active,
+#nav a:hover {
+  opacity: 1;
+}
+
+
+.overlay {  
+  height: 0%;
+  width: 50%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  border-radius: 1vw;
+  box-shadow: .1vw 1vw 1vw 0 var(--box-Shadow-Color), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: var(--app-Bg-Color);
+  background-color: var(--app-Bg-ColorA);
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  text-decoration: none;
+  color: var(--text-Color);
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.overlay li {
+  padding: 0;
+  text-decoration: none;
+  color: var(--text-Color)1;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+.overlay a {
+  padding: 0;
+  text-decoration: none;
+  color: var(--text-Color);
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.overlay a:hover, .overlay a:focus, .overlay li:hover {
+  color: var(--hover-Color);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 5vw;
+}
+
+.content {
+  position:absolute;
+  top: 5px;
+  padding: 15px;
+  overflow: visible; 
+  
+}
+
+.content li{
+  position: relative;
+  top: 25%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0;
+  text-decoration: none;
+  color: var(--text-Color);
+  display: block;
+  transition: all 0.3s ease-in;
+}
+.center {
+	margin: auto;
+	padding: 0;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	}
+.themeList {
+  margin: auto;
+  display: block;
+  align-content: center;
+  text-align: center;
+  width:200px;
+	padding: 5px;
+  transition: all 0.3s ease-in;
+}
+.themeList a:hover, .themeList li:hover {
+  color: var(--hover-Color);
+}
+
+.close {
+	display:inline-block;
+	padding:2px 5px;
+	background:var(--app-Bg-Color);
+	}
+
+
+h1 {
+  color: var(--text-Color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+li, p {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  color: var(--text-Color);
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+li:hover {
+  color: var(--hover-Color);
+}
+
+li input {
+  margin: 0 0.5rem 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  margin: auto 0;
+  padding: 0.5rem 0.75rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.1s ease-in;
+}
+
+input[type="checkbox"]{
+  display: inline !important;
+  box-shadow: none;
+  width: auto;
+}
+
+input {font-size: 3vw;}
+select {font-size: 3vw;}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-Color);
+  transition: all 0.3s ease-in;
+
+  
+}
+
+
+
+table, td, th {
+  transition: all 0.3s ease-in;
+  border: 2px solid var(--app-Bg-Color);
+  padding: 5px;
+}
+
+th {text-align: center;}
+

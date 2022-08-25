@@ -1,30 +1,26 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="mainApp">
+    <div class="navBar">
+      {{ pageTitle }}<NavBar />
+    </div>
+    <router-view class="content"/>
+  </div>
 </template>
+<script setup>
+import NavBar from '@/components/NavBar.vue'
+const pageTitle="";
+</script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style>
+:root {
+  --app-Bg-Color: rgb( 18,49,29 );
+  --app-Bg-ColorA: rgba( 18,49,29 );
+  --main-Bg-Color: rgb(99, 145, 115);
+  --overlay-Text-Hover-Color: rgb( 134,57,57 );
+  --text-Color: rgb(245, 241, 241);
+  --hover-Color: rgb(173, 96, 51);
+  --box-Shadow-Color: rgb( 18,49,29 );
+  --box-Shadow-ColorA: rgba( 18,49,29,0.97 );
 }
 </style>
