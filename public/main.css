@@ -72,8 +72,7 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: var(--app-Bg-Color);
-  background-color: var(--app-Bg-ColorA);
+  background-color: rgba(0, 0, 0, 0.849);
   overflow: hidden;
   transition: all 0.3s ease-in;
 }

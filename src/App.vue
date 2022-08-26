@@ -3,7 +3,7 @@
     <div class="navBar">
       {{ pageTitle }}<NavBar />
     </div>
-    <router-view class="content"/>
+    <router-view />
   </div>
 </template>
 <script setup>
