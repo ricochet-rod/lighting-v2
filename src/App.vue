@@ -2,25 +2,43 @@
   <div class="mainApp">
     <div class="navBar">
       {{ pageTitle }}<NavBar />
+      {{ defaultTheme.themeName }}
+      
     </div>
     <router-view />
   </div>
 </template>
 <script setup>
-import NavBar from '@/components/NavBar.vue'
+import { computed } from 'vue'
+import NavBar from '@/components/NavBar.vue';
+import sourceTheme from './Themes.json';
 const pageTitle="";
+
+const defaultTheme = computed(()=>{
+  return sourceTheme.colorTheme.find(
+    colorTheme => colorTheme.default == true
+  )
+})
+console.log(sourceTheme.colorTheme.themeName)
+document.documentElement.style.setProperty('--app-Bg-Color', defaultTheme.value.appBgColor);
+document.documentElement.style.setProperty('--body-Bg-Color', defaultTheme.value.bodyBgColor);
+document.documentElement.style.setProperty('--overlay-Bg-Color', defaultTheme.value.overlayBgColor);
+document.documentElement.style.setProperty('--hover-Color', defaultTheme.value.hoverColor);
+document.documentElement.style.setProperty('--text-Color', defaultTheme.value.textColor);
+
+
+//console.log(getDefaultTheme.themeName)
 </script>
+
+
 
 
 <style>
 :root {
-  --app-Bg-Color: rgb( 18,49,29 );
-  --app-Bg-ColorA: rgba( 18,49,29 );
-  --main-Bg-Color: rgb(99, 145, 115);
-  --overlay-Text-Hover-Color: rgb( 134,57,57 );
-  --text-Color: rgb(245, 241, 241);
-  --hover-Color: rgb(173, 96, 51);
-  --box-Shadow-Color: rgb( 18,49,29 );
-  --box-Shadow-ColorA: rgba( 18,49,29,0.97 );
+  --app-Bg-Color: Null;
+  --body-Bg-Color: Null;
+  --overlay-Bg-Color: Null;
+  --hover-Color: Null;
+  --text-Color: Null;
 }
 </style>

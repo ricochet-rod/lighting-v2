@@ -5,7 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
-  background: var(--main-Bg-Color);
+  background: var(--app-Bg-Color);
   position: absolute;
   top: 0;
   padding: 0;
@@ -21,7 +21,7 @@
   padding: 0;
   display:flow-root;
   width: 99vw;
-  background: var(--main-Bg-Color);
+  background: var(--app-Bg-Color);
   color: var(--text-Color);
   border-radius: 5px;
   box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.08);
@@ -40,7 +40,7 @@ body {
   font-size: 1.5rem;
   transition: all 0.1s ease-in;
   color: var(--text-Color);
-  background-color: var(--app-Bg-Color);
+  background-color: var(--body-Bg-Color);
 }
 
 #nav .LeftTitle {
@@ -67,14 +67,14 @@ body {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   border-radius: 1vw;
-  box-shadow: .1vw 1vw 1vw 0 var(--box-Shadow-Color), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: .1vw 1vw 1vw 0 var(--app-Bg-Color), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color: var(--overlay-Bg-Color);
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 
@@ -90,7 +90,7 @@ body {
   text-decoration: none;
   color: var(--text-Color);
   display: block;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .overlay li {
@@ -98,14 +98,13 @@ body {
   text-decoration: none;
   color: var(--text-Color)1;
   display: block;
-  transition: all 0.3s ease-in;
 }
 .overlay a {
   padding: 0;
   text-decoration: none;
   color: var(--text-Color);
   display: block;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .overlay a:hover, .overlay a:focus, .overlay li:hover {
@@ -120,9 +119,12 @@ body {
 }
 
 .content {
-  position:absolute;
-  top: 5px;
-  padding: 15px;
+  position:relative;
+  width:max-content;
+  display: block;
+  margin: auto;
+  align-content: center;
+  padding: 5px;
   overflow: visible; 
   
 }
@@ -139,7 +141,7 @@ body {
   text-decoration: none;
   color: var(--text-Color);
   display: block;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 }
 .center {
 	margin: auto;
@@ -148,17 +150,20 @@ body {
 	left:50%;
 	top:50%;
 	transform: translate(-50%, -50%);
+  transition: all 0.1s ease-in;
 	}
-.themeList {
-  margin: auto;
-  display: block;
+#themeList {
+  position:relative;
+  display:bolck;
+  left:50%;
+	top:50%;
   align-content: center;
   text-align: center;
-  width:200px;
+  width:100%;
 	padding: 5px;
   transition: all 0.3s ease-in;
 }
-.themeList a:hover, .themeList li:hover {
+.themeList a:hover, .themeList li:focus, .themeList li:hover {
   color: var(--hover-Color);
 }
 
@@ -180,19 +185,10 @@ ul {
 }
 
 
-
-
-li, p {
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.5px;
-  color: var(--text-Color);
-  cursor: pointer;
-  transition: all 0.1s ease-in;
-}
-
 li:hover {
   color: var(--hover-Color);
+  font-weight: bolder;
+  transition: all 0.1s ease-in;
 }
 
 li input {
@@ -224,7 +220,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   color: var(--text-Color);
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 
   
 }

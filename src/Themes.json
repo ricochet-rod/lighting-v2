@@ -1,0 +1,64 @@
+{
+    "colorTheme": [
+      {
+            "themeName": "Rowling Theme",
+            "id": 1,
+            "default": false,
+            "appBgColor": "rgb(18, 49, 29",
+            "bodyBgColor": "rgb(92, 0, 1)",
+            "overlayBgColor": "rgb(14, 26, 64)",
+            "hoverColor": "rgba(89, 49, 1, 1)",
+            "textColor": "rgb(211, 166, 37)"
+      },
+      {
+            "themeName": "Lego Art",
+            "id": 2,
+            "default": false,
+            "appBgColor": "rgba(22, 32, 38, 1)",
+            "bodyBgColor": "rgba(140, 2, 2, 1)",
+            "overlayBgColor": "rgba(2, 89, 31, 1)",
+            "hoverColor": "rgba(242, 226, 7, 1)",
+            "textColor": "rgba(242, 184, 12, 1)"
+        },
+        {
+            "themeName": "Wilderness Theme",
+            "id": 3,
+            "default": false,
+            "appBgColor": "rgba(51, 63, 26, 1)",
+            "bodyBgColor": "rgba(179, 191, 93, 1)",
+            "overlayBgColor": "rgba(100, 114, 47, 1)",
+            "hoverColor": "rgba(89, 49, 1, 1)",
+            "textColor": "rgb(211, 166, 37)"
+      },
+      {
+            "themeName": "Pastels Theme",
+            "id": 4,
+            "default": false,
+            "appBgColor": "rgba(119, 139, 165, 1)",
+            "bodyBgColor": "rgba(165, 98, 74, 1)",
+            "overlayBgColor": "rgba(216, 130, 153, 1)",
+            "hoverColor": "rgba(89, 49, 1, 1)",
+            "textColor": "rgba(242, 194, 106, 1)"
+        },
+        {
+            "themeName": "Pastels 1 Theme",
+            "id": 5,
+            "default": false,
+            "appBgColor": "rgba(52, 91, 124, 1)",
+            "bodyBgColor": "rgba(107, 91, 123, 1)",
+            "overlayBgColor": "rgba(52, 80, 110, 1)",
+            "hoverColor": "rgba(90, 100, 149, 1)",
+            "textColor": "rgba(185, 120, 80, 1)"
+        },
+        {
+            "themeName": "Rods Theme",
+            "id": 6,
+            "default": true,
+            "appBgColor": "rgba(52, 91, 124, 1)",
+            "bodyBgColor": "rgba(107, 91, 123, 1)",
+            "overlayBgColor": "rgba(52, 80, 110, 1)",
+            "hoverColor": "rgba(90, 100, 149, 1)",
+            "textColor": "rgba(185, 120, 80, 1)"
+        }
+    ]
+}
